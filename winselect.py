@@ -24,6 +24,7 @@ def setup_argparse():
     _add.set_defaults(func=winselect_core._add.main)
     _add.add_argument('-n', '--new', dest='_new', nargs=2, action='store', help='')
     _add.add_argument('-a', '--append', dest='_append', nargs=2, action='store', help='')
+    _add.add_argument('-t', '--top', dest='_top', nargs=2, action='store', help='')
 
     # -- remove -------------------------
     _remove = subparsers.add_parser('remove')
